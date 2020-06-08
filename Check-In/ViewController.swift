@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.performSegue(withIdentifier: "register", sender: nil)
+        
         checkInTable.dataSource = self
         checkInTable.delegate = self
         
@@ -28,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //settingsOut.layer.borderColor = UIColor.lightGray.cgColor
         //settingsOut.layer.borderWidth = 0.5
         
-        
+        checkInOut.backgroundColor = UIColor(displayP3Red: 126/255, green: 217/255, blue: 98/255, alpha: 1.0)
         navigationController?.setNavigationBarHidden(true, animated: true)
         //LOAD DATA
         if let data = UserDefaults.standard.object(forKey: "checkedIn") as? [String:[String:Any]] {
@@ -157,10 +159,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var checkInTable: UITableView!
     
     @IBAction func checkInButton(_ sender: Any) {
+        checkInOut.backgroundColor = UIColor(displayP3Red: 126/255, green: 217/255, blue: 98/255, alpha: 1.0)
         self.performSegue(withIdentifier: "readQR", sender: nil)
     }
     
     @IBAction func viewHistory(_ sender: Any) {
+        historyOut.backgroundColor = UIColor(red: 242/255, green: 246/255, blue: 250/255, alpha: 1.0)
         if UserDefaults.standard.bool(forKey: "DisableHistory") {
             let alert = UIAlertController(title: "History Disabled", message: "You can enabled history in settings", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .cancel) { (nil) in
@@ -175,6 +179,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var settingsOut: UIButton!
     @IBOutlet var historyOut: UIButton!
+    
+    
+    @IBAction func historyDown(_ sender: Any) {
+        historyOut.backgroundColor = UIColor(red: 217/255, green: 220/255, blue: 224/255, alpha: 1.0)
+    }
+    @IBAction func historyUpOut(_ sender: Any) {
+        historyOut.backgroundColor = UIColor(red: 242/255, green: 246/255, blue: 250/255, alpha: 1.0)
+    }
+    @IBAction func settingsDown(_ sender: Any) {
+        settingsOut.backgroundColor = UIColor(red: 217/255, green: 220/255, blue: 224/255, alpha: 1.0)
+    }
+    @IBAction func settingsUpIn(_ sender: Any) {
+        settingsOut.backgroundColor = UIColor(red: 242/255, green: 246/255, blue: 250/255, alpha: 1.0)
+    }
+    @IBAction func settingsUpOut(_ sender: Any) {
+        settingsOut.backgroundColor = UIColor(red: 242/255, green: 246/255, blue: 250/255, alpha: 1.0)
+    }
+    
+    @IBAction func checkInDown(_ sender: Any) {
+        checkInOut.backgroundColor = UIColor(red: 108/255, green: 187/255, blue: 85/255, alpha: 1.0)
+    }
+    @IBAction func checkInUpOut(_ sender: Any) {
+        checkInOut.backgroundColor = UIColor(displayP3Red: 126/255, green: 217/255, blue: 98/255, alpha: 1.0)
+    }
+    
+    
     
     
     @IBOutlet var checkInOut: UIButton!

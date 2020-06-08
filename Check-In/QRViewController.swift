@@ -100,11 +100,15 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
             captureSession.addOutput(captureMetadataOutput)
             captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
-            videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-            videoPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            videoPreviewLayer?.frame = view.layer.bounds
-            view.layer.addSublayer(videoPreviewLayer!)
-            captureSession.startRunning()
+            DispatchQueue.global().async {
+                self.captureSession.startRunning()
+                DispatchQueue.main.async {
+                    self.videoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
+                    self.videoPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
+                    self.videoPreviewLayer?.frame = self.view.layer.bounds
+                    self.view.layer.addSublayer(self.videoPreviewLayer!)
+                }
+            }
         } catch {
             // If any error occurs, simply print it out and don't continue any more.
             print(error)

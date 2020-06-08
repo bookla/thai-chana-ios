@@ -22,6 +22,7 @@
 		FD4D66B8248D2C6A006B6AF7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */; };
 		FD4D66BA248D2F5D006B6AF7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */; };
 		FD4D66BC248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66BB248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift */; };
+		FDFED175248E5CC500763D66 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFED174248E5CC500763D66 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		FD4D66BB248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotCheckedInTableViewCell.swift; sourceTree = "<group>"; };
+		FDFED174248E5CC500763D66 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */,
 				FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */,
 				FD4D6699248CC8DB006B6AF7 /* Main.storyboard */,
+				FDFED174248E5CC500763D66 /* RegistrationViewController.swift */,
 				FD4D66B5248D11D6006B6AF7 /* SettingsViewController.swift */,
 				FD4D66AF248D0AAB006B6AF7 /* CheckOutRequestViewController.swift */,
 				FD4D66AD248CEBBE006B6AF7 /* CheckedInTableViewCell.swift */,
@@ -169,6 +172,7 @@
 				FD4D66AA248CD66B006B6AF7 /* QRViewController.swift in Sources */,
 				FD4D66AC248CD9AE006B6AF7 /* RequestViewController.swift in Sources */,
 				FD4D66B8248D2C6A006B6AF7 /* HistoryViewController.swift in Sources */,
+				FDFED175248E5CC500763D66 /* RegistrationViewController.swift in Sources */,
 				FD4D66BC248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift in Sources */,
 				FD4D6694248CC8DB006B6AF7 /* AppDelegate.swift in Sources */,
 				FD4D66B0248D0AAB006B6AF7 /* CheckOutRequestViewController.swift in Sources */,
@@ -321,12 +325,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 150;
 				DEVELOPMENT_TEAM = 96ZWN3H5LD;
 				INFOPLIST_FILE = "Check-In/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Book-Lailert.Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -339,12 +345,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 150;
 				DEVELOPMENT_TEAM = 96ZWN3H5LD;
 				INFOPLIST_FILE = "Check-In/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Book-Lailert.Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
