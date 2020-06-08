@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.performSegue(withIdentifier: "register", sender: nil)
+        //self.performSegue(withIdentifier: "register", sender: nil)
         
         checkInTable.dataSource = self
         checkInTable.delegate = self
