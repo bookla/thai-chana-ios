@@ -25,6 +25,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         checkInOut.layer.cornerRadius = 15
         checkInOut.clipsToBounds = true
         
+        topView.layer.cornerRadius = 13
+        topView.clipsToBounds = true
+        
         //historyOut.layer.borderColor = UIColor.lightGray.cgColor
         //historyOut.layer.borderWidth = 0.5
         //settingsOut.layer.borderColor = UIColor.lightGray.cgColor
@@ -206,6 +209,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
+    @IBOutlet var topView: UIView!
     
     @IBOutlet var checkInOut: UIButton!
 }
