@@ -13,6 +13,15 @@
 		FD4D669B248CC8DB006B6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6699248CC8DB006B6AF7 /* Main.storyboard */; };
 		FD4D669D248CC8E0006B6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4D669C248CC8E0006B6AF7 /* Assets.xcassets */; };
 		FD4D66A0248CC8E0006B6AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4D669E248CC8E0006B6AF7 /* LaunchScreen.storyboard */; };
+		FD4D66A8248CD25C006B6AF7 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66A7248CD25C006B6AF7 /* extension.swift */; };
+		FD4D66AA248CD66B006B6AF7 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66A9248CD66B006B6AF7 /* QRViewController.swift */; };
+		FD4D66AC248CD9AE006B6AF7 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66AB248CD9AE006B6AF7 /* RequestViewController.swift */; };
+		FD4D66AE248CEBBE006B6AF7 /* CheckedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66AD248CEBBE006B6AF7 /* CheckedInTableViewCell.swift */; };
+		FD4D66B0248D0AAB006B6AF7 /* CheckOutRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66AF248D0AAB006B6AF7 /* CheckOutRequestViewController.swift */; };
+		FD4D66B6248D11D6006B6AF7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66B5248D11D6006B6AF7 /* SettingsViewController.swift */; };
+		FD4D66B8248D2C6A006B6AF7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */; };
+		FD4D66BA248D2F5D006B6AF7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */; };
+		FD4D66BC248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D66BB248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		FD4D669C248CC8E0006B6AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4D669F248CC8E0006B6AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4D66A1248CC8E0006B6AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4D66A7248CD25C006B6AF7 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		FD4D66A9248CD66B006B6AF7 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		FD4D66AB248CD9AE006B6AF7 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		FD4D66AD248CEBBE006B6AF7 /* CheckedInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedInTableViewCell.swift; sourceTree = "<group>"; };
+		FD4D66AF248D0AAB006B6AF7 /* CheckOutRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutRequestViewController.swift; sourceTree = "<group>"; };
+		FD4D66B5248D11D6006B6AF7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		FD4D66BB248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotCheckedInTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +76,20 @@
 			children = (
 				FD4D6693248CC8DB006B6AF7 /* AppDelegate.swift */,
 				FD4D6695248CC8DB006B6AF7 /* SceneDelegate.swift */,
+				FD4D66BB248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift */,
 				FD4D6697248CC8DB006B6AF7 /* ViewController.swift */,
+				FD4D66A7248CD25C006B6AF7 /* extension.swift */,
+				FD4D66B7248D2C6A006B6AF7 /* HistoryViewController.swift */,
+				FD4D66B9248D2F5D006B6AF7 /* HistoryTableViewCell.swift */,
 				FD4D6699248CC8DB006B6AF7 /* Main.storyboard */,
+				FD4D66B5248D11D6006B6AF7 /* SettingsViewController.swift */,
+				FD4D66AF248D0AAB006B6AF7 /* CheckOutRequestViewController.swift */,
+				FD4D66AD248CEBBE006B6AF7 /* CheckedInTableViewCell.swift */,
 				FD4D669C248CC8E0006B6AF7 /* Assets.xcassets */,
 				FD4D669E248CC8E0006B6AF7 /* LaunchScreen.storyboard */,
 				FD4D66A1248CC8E0006B6AF7 /* Info.plist */,
+				FD4D66A9248CD66B006B6AF7 /* QRViewController.swift */,
+				FD4D66AB248CD9AE006B6AF7 /* RequestViewController.swift */,
 			);
 			path = "Check-In";
 			sourceTree = "<group>";
@@ -139,8 +166,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4D6698248CC8DB006B6AF7 /* ViewController.swift in Sources */,
+				FD4D66AA248CD66B006B6AF7 /* QRViewController.swift in Sources */,
+				FD4D66AC248CD9AE006B6AF7 /* RequestViewController.swift in Sources */,
+				FD4D66B8248D2C6A006B6AF7 /* HistoryViewController.swift in Sources */,
+				FD4D66BC248D39FA006B6AF7 /* NotCheckedInTableViewCell.swift in Sources */,
 				FD4D6694248CC8DB006B6AF7 /* AppDelegate.swift in Sources */,
+				FD4D66B0248D0AAB006B6AF7 /* CheckOutRequestViewController.swift in Sources */,
 				FD4D6696248CC8DB006B6AF7 /* SceneDelegate.swift in Sources */,
+				FD4D66AE248CEBBE006B6AF7 /* CheckedInTableViewCell.swift in Sources */,
+				FD4D66BA248D2F5D006B6AF7 /* HistoryTableViewCell.swift in Sources */,
+				FD4D66A8248CD25C006B6AF7 /* extension.swift in Sources */,
+				FD4D66B6248D11D6006B6AF7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Book-Lailert.Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Book-Lailert.Check-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
